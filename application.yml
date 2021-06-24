@@ -1,18 +1,17 @@
-spring: 
-  profiles: 
-    active: 
-      - dev
-
+# 不同的开发环境，不同的微服务名字
+spring:
+  profiles:
+    active:
+    - dev
 ---
-spring: 
-  profiles: dev #开发环境
-  application： 
-    name: cloud-config-jsx-dev
-
+spring:
+  profiles: dev     #开发环境
+  application: 
+    name: microservicecloud-config-atguigu-dev
 ---
-spring: 
-  profiles: test #测试环境
-  application： 
-    name: cloud-config-jsx-test
+spring:
+  profiles: test   #测试环境
+  application: 
+    name: microservicecloud-config-atguigu-test
 
-#注意  文件编码一定为utf-8
+#  请保存为UTF-8格式
